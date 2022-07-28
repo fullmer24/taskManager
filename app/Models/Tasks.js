@@ -12,6 +12,11 @@ export class tasks {
       <div>
         <h2>${this.title}</h2>
         <p>${this.task}</p>
+        <form onsubmit="app.TasksController._drawtask()">
+              <label class="form-control" for="task"></label>
+              <input class="form-control" type="text" id="taskForm">
+              <button type="submit" onclick="app.TasksController.createTask()" class="btn btn-primary">submit</button>
+            </form>
       </div>
     </div>
         `
